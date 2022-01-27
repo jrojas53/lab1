@@ -1,5 +1,5 @@
-//modified by:
-//date:
+//modified by: Jesus Rojas
+//date: 1/27/2022
 //
 //author: Gordon Griesel
 //date: Spring 2022
@@ -49,7 +49,10 @@ void init_opengl(void);
 void physics(void);
 void render(void);
 
-
+//MVC architecture
+//M - Model
+//V - View
+//C - Controller
 
 //=====================================
 // MAIN FUNCTION IS HERE
@@ -253,7 +256,7 @@ void render()
 	glClear(GL_COLOR_BUFFER_BIT);
 	//Draw box.
 	glPushMatrix();
-	glColor3ub(150, 160, 220);
+	glColor3ub(200, 200, 200);
 	glTranslatef(pos[0], pos[1], 0.0f);
 	glBegin(GL_QUADS);
 		glVertex2f(-w, -w);
